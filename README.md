@@ -1,4 +1,4 @@
-# JAJF Fundraising Dashboard
+# JAJF Fundraising Dashboard 
 
 A live fundraising KPI dashboard for Jack & Jill Late Stage Cancer Foundation,
 pulling data from Raiser's Edge NXT via the Blackbaud SKY API. Two views:
