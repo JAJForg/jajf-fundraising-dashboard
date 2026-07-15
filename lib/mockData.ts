@@ -1,0 +1,50 @@
+import { FundraisingSnapshot } from "./types";
+
+// Placeholder data so the dashboard is fully viewable before Blackbaud
+// credentials are configured. Once BLACKBAUD_REFRESH_TOKEN is set in the
+// environment, lib/data.ts automatically switches to live SKY API data.
+export const mockSnapshot: FundraisingSnapshot = {
+  totalRaisedYTD: 612450,
+  annualGoal: 1000000,
+  donorCount: 341,
+  monthlyDonorCount: 87,
+  averageGift: 1796,
+  raisedThisMonth: 84200,
+  raisedLastMonth: 61300,
+  lastSynced: new Date().toISOString(),
+  isLive: false,
+  fiscalYearLabel: "FY2026 (Oct 1, 2025 – Sep 30, 2026)",
+  topCampaigns: [
+    { name: "20 for 20 — Out of the Kitchen", raised: 248000, goal: 400000 },
+    { name: "WOW! Society — General Fund", raised: 190500, goal: 300000 },
+    { name: "Family Sponsorship Program", raised: 98950, goal: 150000 },
+    { name: "Smugglers' Notch Family Fund", raised: 75000, goal: 100000 },
+  ],
+  topDonorsGeneralCash: [
+    { name: "The Albert Family Foundation", amount: 50000 },
+    { name: "Margaret & Paul Chen", amount: 35000 },
+    { name: "Riverside Community Trust", amount: 28500 },
+    { name: "Sarah Nova", amount: 22000 },
+    { name: "The Terry-Nguyen Family", amount: 18750 },
+    { name: "Blackrock Employee Giving", amount: 15200 },
+    { name: "Jonathan & Emily Agostino", amount: 12000 },
+    { name: "Piedmont Cancer Care Partners", amount: 10500 },
+    { name: "The Kanter Foundation", amount: 9800 },
+    { name: "Anonymous", amount: 9000 },
+  ],
+  topDonorsGiftInKind: [
+    { name: "St. Regis Atlanta", amount: 18000 },
+    { name: "Smugglers' Notch Resort", amount: 14500 },
+    { name: "Delta Air Lines", amount: 12000 },
+    { name: "Whole Foods Market — Buckhead", amount: 6200 },
+    { name: "Home Depot Foundation", amount: 5400 },
+  ],
+  monthlyTrend: [
+    { month: "Feb", amount: 42000 },
+    { month: "Mar", amount: 58000 },
+    { month: "Apr", amount: 51500 },
+    { month: "May", amount: 67200 },
+    { month: "Jun", amount: 61300 },
+    { month: "Jul", amount: 84200 },
+  ],
+};
